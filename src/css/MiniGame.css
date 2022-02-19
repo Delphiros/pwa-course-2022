@@ -1,0 +1,20 @@
+.ball{
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    text-align: center;
+}
+
+.ball-tan{
+    background-color: rgb(212, 182, 142);
+}
+
+.ball-teal{
+    background-color: teal;
+}
+
+.minigame-page{
+    background-color: wheat;
+    height: 100%;
+    width: 100%;
+}
