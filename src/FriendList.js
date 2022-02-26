@@ -3,6 +3,8 @@ import './FriendList.css';
 import App from './components/App';
 import Avatar from './components/Avatar';
 
+
+
 function FriendList(){
   const [friends, setFriends] = useState([
     {user: "user1", displayName: "ไอ้ปื้ด"},
@@ -14,7 +16,14 @@ function FriendList(){
   return(
     <App>
       <div className="friend-list">
-       ใส่โค้ดที่นี่
+        {
+          friends.map (x=> 
+            <div className='friend-list-item'>
+            <Avatar name={x.user} />
+            {Avatar.user}{x.displayName}
+            
+          </div>)
+        }           
       </div>
     </App>
   )
